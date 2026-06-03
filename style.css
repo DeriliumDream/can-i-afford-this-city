@@ -1,17 +1,87 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 40px;
-    text-align: center;
-  }
-  
-  h1 {
-    color: #222;
-    font-size: 48px;
-  }
-  
-  p {
-    color: #555;
-    font-size: 20px;
-  }
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.container {
+  max-width: 450px;
+  margin: 60px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #555;
+  font-size: 18px;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+#breakdown {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  text-align: left;
+}
+
+#comparison {
+  margin-top: 25px;
+  padding: 15px;
+  background: #f8f8f8;
+  border-radius: 10px;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode .container {
+  background-color: #1e1e1e;
+}
+
+.dark-mode input,
+.dark-mode select {
+  background-color: #2a2a2a;
+  color: white;
+  border: 1px solid #555;
+}
+
+.dark-mode #breakdown,
+.dark-mode #comparison {
+  background-color: #2a2a2a;
+}

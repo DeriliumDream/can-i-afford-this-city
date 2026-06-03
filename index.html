@@ -1,29 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Can I Afford This City?</title>
-  <link rel="stylesheet" href="style.css" />
+  <button id="darkModeBtn" onclick="toggleDarkMode()">
+    Toggle Dark Mode
+  </button>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-      <h1>Can I Afford This City?</h1>
-      <p>Calculate your monthly budget.</p>
-  
-      <input type="number" id="income" placeholder="Monthly Income" />
-  
-      <input type="number" id="rent" placeholder="Monthly Rent" />
-  
-      <input type="number" id="food" placeholder="Food Expenses" />
-  
-      <input type="number" id="transport" placeholder="Transport Expenses" />
-  
-      <button onclick="calculateBudget()">Calculate</button>
-  
-      <h2 id="result"></h2>
+  <div class="container">
+
+    <h1>Can I Afford This City?</h1>
+    <p>Calculate your monthly budget.</p>
+
+    <!-- City Selector -->
+    <select id="citySelect">
+      <option value="">Choose a city</option>
+    </select>
+
+    <!-- Budget Inputs -->
+    <input type="number" id="income" placeholder="Monthly Income">
+
+    <input type="number" id="rent" placeholder="Monthly Rent">
+
+    <input type="number" id="food" placeholder="Food Expenses">
+
+    <input type="number" id="transport" placeholder="Transport Expenses">
+
+    <input type="number" id="utilities" placeholder="Utilities">
+
+    <input type="number" id="internet" placeholder="Internet">
+
+    <button onclick="calculateBudget()">
+      Calculate
+    </button>
+
+    <!-- Budget Result -->
+    <h2 id="result"></h2>
+
+    <!-- Expense Breakdown -->
+    <div id="breakdown"></div>
+
+    <!-- City Comparison -->
+    <div id="comparison">
+
+      <h2>Compare Two Cities</h2>
+
+      <select id="cityOne">
+        <option value="">Choose first city</option>
+      </select>
+
+      <select id="cityTwo">
+        <option value="">Choose second city</option>
+      </select>
+
+      <button onclick="compareCities()">
+        Compare
+      </button>
+
+      <div id="compareResult"></div>
+
     </div>
-  
-    <script src="script.js"></script>
+
+  </div>
+
+  <script src="script.js"></script>
+
 </body>
 </html>

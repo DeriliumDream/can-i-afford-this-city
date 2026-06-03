@@ -1,0 +1,5 @@
+city,country,rent,groceries,transport,utilities,internet
+Melbourne,Australia,"$1,900","$450","$180","$220","$80"
+Sydney,Australia,"$2,400","$500","$220","$250","$85"
+London,UK,"£1,700","£420","£190","£230","£75"
+Toronto,Canada,"CA$1,850","CA$430","CA$160","CA$210","CA$70"
